@@ -8,10 +8,10 @@ permalink:        /blog/:year/:month/:day/:title
 
 # Setup
 title:            '不开心你好我叫没烦恼'
-tagline:          'Ipaler.com'
-keywords:		  'ipaler.com,github,blog,jekyll,open'
-description:      'ipaler.com,This is personal site of ipaler,不开心你好我叫没烦恼'
-url:              '//ipaler.com'
+tagline:          'ipaler.github.io'
+keywords:		  'ipaler.github.io,github,blog,jekyll,open'
+description:      'ipaler.github.io,This is personal site of ipaler,不开心你好我叫没烦恼'
+url:              '//ipaler.github.io'
 baseurl:          ''
 
 # Navigation
