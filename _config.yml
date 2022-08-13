@@ -7,10 +7,10 @@ highlighter: pygments
 permalink:        /blog/:year/:month/:day/:title
 
 # Setup
-title:            '不开心你好我叫没烦恼'
+title:            'Major Wang'
 tagline:          'ipaler.github.io'
 keywords:		  'ipaler.github.io,github,blog,jekyll,open'
-description:      'ipaler.github.io,This is personal site of ipaler,不开心你好我叫没烦恼'
+description:      'ipaler.github.io,This is personal site of ipaler'
 url:              '//ipaler.github.io'
 baseurl:          ''
 
