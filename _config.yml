@@ -4,7 +4,7 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 highlighter: pygments
 
 # Permalinks
-permalink:        /blog/:year/:month/:day/:title
+permalink:        /post/:year/:month/:day/:title
 
 # Setup
 title:            'Major Wang'
