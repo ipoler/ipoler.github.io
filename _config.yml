@@ -4,10 +4,10 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 highlighter: pygments
 
 # Permalinks
-permalink:        /post/:year/:month/:day/:title
+permalink:        /posts/:year/:month/:day/:title
 
 # Setup
-title:            'Major Wang'
+title:            '坤平的博客'
 tagline:          'ipaler.github.io'
 keywords:		  'ipaler.github.io,github,blog,jekyll,open'
 description:      'ipaler.github.io,This is personal site of ipaler'
@@ -20,6 +20,8 @@ navigation:
   url: /search/
 - text: 文章列表
   url : /archive/
+- text: 网址导航
+  url: /nav/
 - text: 我的标签
   url: /tags/
 - text: 我的简历
@@ -44,7 +46,7 @@ disqushandler: 'ipaler'
 
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
-paginate_path: '/blog/page:num'
+paginate_path: '/posts/page:num'
 destination: ./_site
 
 # Custom vars
