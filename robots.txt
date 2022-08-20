@@ -1,3 +1,2 @@
 User-agent: *
-Sitemap: https://ipaler.github.io/sitemap.xml
 Disallow:

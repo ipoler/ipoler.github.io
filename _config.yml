@@ -7,11 +7,11 @@ highlighter: pygments
 permalink:        /posts/:year/:month/:day/:title
 
 # Setup
-title:            '坤平的博客'
+title:            '坤平的主页'
 tagline:          'ipaler.github.io'
 keywords:		  'ipaler.github.io,github,blog,jekyll,open'
 description:      'ipaler.github.io,This is personal site of ipaler'
-url:              '//ipaler.github.io'
+url:              'https://ipaler.github.io'
 baseurl:          ''
 
 # Navigation
@@ -20,19 +20,16 @@ navigation:
   url: /search/
 - text: 文章列表
   url : /archive/
-- text: 网址导航
-  url: /nav/
 - text: 我的标签
   url: /tags/
 - text: 我的简历
   url: /resume/
-- text: 我的博客
-  url: /blog/
 - text: 有关于我
   url: /about/
 
 # Author Details
-author:         'ipaler'
+author:         '坤平'
+github:         'https://github.com/ipaler'
 linkedin:       'https://ae.linkedin.com/in/ipaler/'
 twitter:        'https://twitter.com/ipaler'
 facebook:       'https://www.facebook.com/ipaler'

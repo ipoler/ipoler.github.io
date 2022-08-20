@@ -1,8 +1,8 @@
 ---
 layout: master
-title: 坤平的博客
+title: 首页
 keywords: 技术交流,编程,软件,ipaler,坤平,互联网,IT博客,Github,开源博客
-description: 坤平的博客，,
+description: 坤平的主页
 ---
 
 <div class="container">
@@ -31,53 +31,88 @@ description: 坤平的博客，,
 				</a>
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="/blog/" target="_blank">
-					<div class="tile orange">
-						<strong>Blog</strong>
-						<div class="icon icon-blog">&nbsp;</div>
+				<a href="/feed.xml">
+					<div class="tile orange ">
+						<div class="icon icon-RSS">&nbsp;</div>
 					</div>
 				</a>
 			</div>
 		</div>
 
-		<div class="row" style="margin-bottom:25px">
+		<div class="row">
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="/blog/">
+					<div class="tile orange">
+						<strong> Blog </strong>
+						<div class="icon icon-blog">&nbsp;</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts offset:1 limit:1 %}
+				<a href="{{post.url}}" title="Recent Article">
+					<div class="tile blue">
+						<h3 class="title">Recent Article</h3>
+						<h4 class="title">{{ post.title }}</h4>
+						<!--<p> {{ post.content | strip_html | truncatewords: 10 }}</p>-->
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts limit:1 %}
+				<a href="{{post.url}}" title="Latest Article">
+					<div class="tile red">
+						<h3 class="title">Latest Article</h3>
+						<h4 class="title">{{ post.title }}</h4>
+						<!--<p> {{ post.content | strip_html | truncatewords: 10 }}</p>-->
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="row">
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="/nav/" target="_blank">
-					<div class="tile green">
-						<h2 class="title">URL Navigation</h2>
-						<p></p>
+					<div class="tile red">
+						<h2 class="title">URL</h2>
+						<p>网址导航</p>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="/tool/" target="_blank">
-					<div class="tile orange">
+					<div class="tile green">
 						<h2 class="title">Tool</h2>
-						<p></p>
+						<p>在线工具</p>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="/emoji/" target="_blank">
-					<div class="tile red">
+					<div class="tile purple">
 						<h2 class="title">Emoji</h2>
-						<p></p>
+						<p>表情符号</p>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="/git-docs/" target="_blank">
-					<div class="tile green">
-						<h2 class="title">Docs</h2>
-						<p></p>
+					<div class="tile orange">
+						<h2 class="title">DOC</h2>
+						<p>文档</p>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="/images/" target="_blank">
 					<div class="tile blue">
-						<h2 class="title">Images</h2>
-						<p></p>
+						<h2 class="title">Image</h2>
+						<p>图片</p>
 					</div>
 				</a>
 			</div>
@@ -114,12 +149,11 @@ description: 坤平的博客，,
 			  	</a>
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="/feed.xml">
-					<div class="tile orange ">
-						<div class="icon icon-RSS">&nbsp;</div>
-  				</div>
+				<a href="{{site.github}}" title="Github" class="tile purple">
+					<i class="icon-gthb" style="font-size:8em"></i>
 				</a>
 			</div>
+
 		</div>
 
 	</nav>
